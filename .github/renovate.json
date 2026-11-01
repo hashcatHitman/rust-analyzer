@@ -9,6 +9,15 @@
         {
             "matchManagers": "npm",
             "enabled": false
+        },
+        {
+            "matchPackagePrefixes": ["quay.io/"],
+            "registryUrls": ["https://quay.io"]
+        },
+        {
+            "datasources": ["docker"],
+            "packagePatterns": ["^quay.io/"],
+            "enabled": true
         }
     ]
 }
