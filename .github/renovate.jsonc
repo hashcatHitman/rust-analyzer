@@ -1,29 +1,4 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:best-practices", "group:all"],
-    "packageRules": [
-        {
-            "matchDepTypes": ["devDependencies", "dev-dependencies", "dev"],
-            "rangeStrategy": "auto"
-        },
-        {
-            "matchManagers": "npm",
-            "enabled": false
-        },
-        {
-            "registryUrls": ["https://quay.io"],
-            "matchPackageNames": [
-                "quay.io/{/,}**"
-            ]
-        },
-        {
-            "matchDatasources": [
-                "docker"
-            ],
-            "enabled": true,
-            "matchPackageNames": [
-                "/^quay.io//"
-            ]
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", "group:all"]
 }
