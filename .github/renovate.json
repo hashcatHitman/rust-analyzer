@@ -9,6 +9,10 @@
         {
             "matchManagers": "npm",
             "enabled": false
+        },
+        {
+            "matchPackagePrefixes": ["quay.io/"],
+            "registryUrls": ["https://quay.io"]
         }
     ]
 }
