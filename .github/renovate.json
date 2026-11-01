@@ -11,13 +11,19 @@
             "enabled": false
         },
         {
-            "matchPackagePrefixes": ["quay.io/"],
-            "registryUrls": ["https://quay.io"]
+            "registryUrls": ["https://quay.io"],
+            "matchPackageNames": [
+                "quay.io/{/,}**"
+            ]
         },
         {
-            "datasources": ["docker"],
-            "packagePatterns": ["^quay.io/"],
-            "enabled": true
+            "matchDatasources": [
+                "docker"
+            ],
+            "enabled": true,
+            "matchPackageNames": [
+                "/^quay.io//"
+            ]
         }
     ]
 }
