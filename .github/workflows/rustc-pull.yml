@@ -10,7 +10,7 @@ jobs:
   pull:
     if: github.repository == 'rust-lang/rust-analyzer'
     # zizmor: ignore[unpinned-uses] We explicitly want to track the main branch.
-    uses: rust-lang/josh-sync/.github/workflows/rustc-pull.yml@main
+    uses: rust-lang/josh-sync/.github/workflows/rustc-pull.yml@d01854a4c8b22ac3d95f16f70f8d1fb12c70c730 # main
     with:
       github-app-id: ${{ vars.APP_CLIENT_ID }}
       pr-author: "workflows-rust-analyzer[bot]"

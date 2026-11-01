@@ -21,16 +21,16 @@ path = "src/bin/main.rs"
 
 [dependencies]
 anyhow.workspace = true
-base64 = "0.22"
+base64 = "0.23"
 crossbeam-channel.workspace = true
-dirs = "6.0.0"
+dirs = "7.0.0"
 dissimilar.workspace = true
 ide-completion.workspace = true
 indexmap.workspace = true
 itertools.workspace = true
-scip = "0.7.1"
+scip = "0.10.0"
 lsp-types = { version = "0.11.0", package = "gen-lsp-types", features = ["url"] }
-parking_lot = "0.12.4"
+parking_lot = "0.13.0"
 xflags = "0.3.2"
 oorandom = "11.1.5"
 rayon.workspace = true
@@ -84,7 +84,7 @@ windows-sys = { version = "0.61", features = [
 ] }
 
 [target.'cfg(not(target_env = "msvc"))'.dependencies]
-jemallocator = { version = "0.5.4", package = "tikv-jemallocator", optional = true }
+jemallocator = { version = "0.7.0", package = "tikv-jemallocator", optional = true }
 
 [dev-dependencies]
 expect-test = "1.5.1"
