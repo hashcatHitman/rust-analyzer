@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - container: quay.io/pypa/manylinux_2_28_aarch64:2026.10.31-1@sha256:724b504247662e1cf122590957c857211ec2d16b113ec134f92c570a2d01250f
+          - container: quay.io/pypa/manylinux_2_28_aarch64:2026.11.01-1@sha256:fae356e9a7b1badc9ab138691b0e9e24f409cb4b68da61eec299c972e09e7c49
 
     runs-on: ubuntu-latest
     container: ${{ matrix.container }}
@@ -28,7 +28,7 @@ jobs:
   does-update:
     runs-on: ubuntu-latest
     container:
-      image: quay.io/pypa/manylinux_2_28_aarch64:2026.10.31-1@sha256:724b504247662e1cf122590957c857211ec2d16b113ec134f92c570a2d01250f
+      image: quay.io/pypa/manylinux_2_28_aarch64:2026.11.01-1@sha256:fae356e9a7b1badc9ab138691b0e9e24f409cb4b68da61eec299c972e09e7c49
 
     steps:
       - name: Checkout repository
