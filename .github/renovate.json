@@ -5,6 +5,10 @@
         {
             "matchDepTypes": ["devDependencies", "dev-dependencies", "dev"],
             "rangeStrategy": "auto"
+        },
+        {
+            "matchManagers": "npm",
+            "enabled": false
         }
     ]
 }
